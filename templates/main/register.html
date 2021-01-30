@@ -100,7 +100,7 @@ form{
   margin-right:auto;
   text-align:center;
 }
-input[type=text],input[type=password] {
+input[type=text],input[type=password],input[type=email] {
   width:175px;
   height:27px;
   margin-top:17px;
@@ -204,7 +204,7 @@ input[type=submit]:hover{
             <form action="" method="POST">
                 {%csrf_token%}
                 <input name="username" type="text" placeholder="Username"/>
-                <input name="email" type="text" placeholder="Email"/>
+                <input name="email" type="email" placeholder="Email"/>
                 <input name="password" type="password" placeholder="Password"/>
                 <input name="password" type="password" placeholder="Repeat Password"/>
                 <input type="submit" value="Register"/>
