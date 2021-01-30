@@ -25,6 +25,8 @@
         </style>
     </head>
     <body>
+        <h1>Hello, {{ username }}</h1>
+        <a href="{% url 'logout'%}">Logout</a>
         <dark>
             {% for value in values %}
                 <button class="button">{{ value }}</button>
