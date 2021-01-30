@@ -41,9 +41,10 @@ def registerPage(request):
         return redirect('home')
     form = CreateUserForm()
     if request.method == 'POST':
+        print(str(form.is_valid()))
+
         form = CreateUserForm(request.POST)
         if form.is_valid():
-            print(form.is_valid)
             form.save()
             return redirect('login')
 
