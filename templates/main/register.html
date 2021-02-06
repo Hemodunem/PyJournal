@@ -203,13 +203,13 @@ input[type=submit]:hover{
         <div class="form">
             <form action="" method="POST">
                 {%csrf_token%}
-                <input name="username" type="text" placeholder="Username"/>
-                <input name="email" type="email" placeholder="Email"/>
-                <input name="password" type="password" placeholder="Password"/>
-                <input name="password" type="password" placeholder="Repeat Password"/>
+                <input id="id_username" name="username" type="text" placeholder="Username"/>
+                <input id="id_email" name="email" type="email" placeholder="Email"/>
+                <input id="id_password" name="password" type="password" placeholder="Password"/>
+                <input id="id_" name="repeat_password" type="password" placeholder="Repeat Password"/>
                 <input type="submit" value="Register"/>
             </form>
         </div>
-        <div class="recovery">Already have an account? <a href="#">Click here</a></div>
+        <div class="recovery">Already have an account? <a href="{% url 'login'%}">Click here</a></div>
     </body>
 </html>

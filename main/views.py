@@ -8,9 +8,31 @@ from main.forms import CreateUserForm
 
 
 def index(request):
-
+    if not request.user.is_authenticated:
+        return redirect('login')
     context = {
-        'values': ['Test 1', 'Test 2'],
+        'values': ['Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',
+                   'Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2','Test 1', 'Test 2',],
         'username': request.user.username
     }
 
