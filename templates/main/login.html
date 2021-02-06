@@ -56,7 +56,7 @@
                 background: url(http://josh-ruther4d.com/wp-content/uploads/2013/04/login.png);
                 background-repeat: no-repeat;
                 width: 62px;
-                height: 62px;
+                height: 35px;
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 22px;
@@ -208,11 +208,12 @@
             <div class="avi"></div>
             <form method="POST" action="">
                 {% csrf_token %}
-                <input name="username" type="text" value="Username" />
-                <input name="password" type="password" value="Password" />
+                <input name="username" type="text" placeholder="Username" />
+                <input name="password" type="password" placeholder="Password" />
                 <input type="submit" value="Login"/>
             </form>
         </div>
+        <div class="recovery">Don't have an account? <a href="{% url 'register'%}">Click here</a></div>
         <div class="recovery">Forgot your password? <a href="#">Click here</a></div>
     </body>
 </html>
